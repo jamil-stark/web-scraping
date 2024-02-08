@@ -6,4 +6,4 @@ with open('index.html', 'r') as html_file:
     soup = BeautifulSoup(content, 'lxml')
     tags = soup.find_all('h5')
     for tag in tags:
-        print(str(tag) + '\n')
+        print(tag.text)
